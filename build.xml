@@ -8,13 +8,13 @@
 	<property name="jmeter.home" value="/usr/local/jmeter/apache-jmeter-5.4.3" />
 	<property name="report.title" value="接口自动化测试" />
 	<!-- jmeter生成jtl格式的结果报告的路径-->
-	<property name="jmeter.result.jtl.dir" value="/usr/local/ant/result.jtl" />
+	<property name="jmeter.result.jtl.dir" value="/usr/local/ant/resultjtl" />
 	<!-- jmeter生成html格式的结果报告的路径-->
 	<property name="jmeter.result.html.dir" value="/usr/local/ant/html" />
 	<!-- 生成的报告的前缀-->
 	<property name="ReportName" value="TestReport" />
 	<property name="jmeter.result.jtlName" value="${jmeter.result.jtl.dir}/${ReportName}${time}.jtl" />
-	<property name="jmeter.result.htmlName" value="${jmeter.result.html.dir}/${ReportName}.html" />
+	<property name="jmeter.result.htmlName" value="${jmeter.result.html.dir}/${ReportName}${time}.html" />
  
 	<target name="run">
 	<antcall target="test" />
